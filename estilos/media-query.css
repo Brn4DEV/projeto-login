@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/*
+device breakpoits 2023
+
+// Small devices (landscape phones, 600px and up)
+@media (min-width: 600px) { ... }  //ja feito em mobile frist
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... } //ja feito em mobile frist
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+
+*/
+#iconUser, #iconPass{
+    position: relative;
+    top: 0.3em;
+}
+#enviar_id{
+    padding: 0.2em;
+}
+#enviar_id:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) /*tablet resolução*/
+ { 
+
+    section#login {
+        min-width: 50vw;       
+    }
+    section#login > div#imagem
+    {
+       float: left;
+       width: 30%;
+       height: 100%;       
+       background: #666564 url(../imagens/LoginTablet.jpg) no-repeat;       
+       
+       background-size: cover;
+    }
+    section#login > div#formulario{
+        float: right;        
+        width: 70%;
+        text-align: center;
+    }
+    #important, #important2, #lembre {
+        position: relative;
+        left: 10px;
+     }
+    #enviar_id {  
+        left: 10px;
+        position: relative;
+    }
+ }
+
+ @media screen and (min-width: 992px) and (max-width: 1900px)/*tv resolução*/
+{
+    section#login {
+        text-align: center;
+        min-width: 50vw;
+    }   
+    section#login > div#imagem {
+        background: #666564 url(../imagens/LoginPC.jpg) no-repeat;
+        height: 200px;
+        background-size: cover;
+        background-position: 25% 25%;
+    }
+
+    #important, #important2, #lembre {
+        position: relative;
+        left: 10px;
+     }
+    #enviar_id {  
+        left: 10px;
+        position: relative;
+    }
+}

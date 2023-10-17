@@ -50,4 +50,15 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 10px;
+    
+}
+#enviar_id {  
+    position: relative;
+    left: 2.1em;
+    top: 3px;
+    width: 156px;
+}
+#important, #important2, #lembre {
+   position: relative;
+   left: 35px;
 }
