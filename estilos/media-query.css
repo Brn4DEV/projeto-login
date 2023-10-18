@@ -19,54 +19,80 @@ device breakpoits 2023
 @media (min-width: 1400px) { ... }
 
 */
-#iconUser, #iconPass{
-    position: relative;
-    top: 0.3em;
-}
-#enviar_id{
-    padding: 0.2em;
-}
-#enviar_id:hover{
-    background-color: black;
-    color: white;
-    transition: 0.2s;
-}
 
 @media screen and (min-width: 768px) and (max-width: 992px) /*tablet resolução*/
  { 
 
     section#login {
-        min-width: 50vw;       
+        min-width: 80vw;   
+        max-height: 90vh;    
+        background: transparent;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.574);
+        backdrop-filter: blur(10px);
     }
     section#login > div#imagem
     {
        float: left;
        width: 30%;
        height: 100%;       
-       background: #666564 url(../imagens/LoginTablet.jpg) no-repeat;       
-       
+       background: #666564 url(../imagens/LoginTablet.jpg) no-repeat;         
+
        background-size: cover;
     }
     section#login > div#formulario{
-        float: right;        
-        width: 70%;
+        display: block;
         text-align: center;
+        justify-content: center;
+        margin-top: 10vh;
     }
-    #important, #important2, #lembre {
+    .material-symbols-outlined {
         position: relative;
-        left: 10px;
-     }
-    #enviar_id {  
-        left: 10px;
-        position: relative;
+        background-color: var(--cinza);
+        color: var(--preto);
+        height: 30px;    
+        padding: 7px;
+        box-shadow: 0px 0px 3px rgb(3, 1, 1);
+        left: 7px;
+        top: 10px;
+    }
+    
+    #iuser, #ipass  {
+        width: 250px;
+        height: 30px;
+        text-align: center;
+        padding: 7px;
+    }
+    #boxuser, #boxpass {
+        padding: 5px;
+    }
+    #enviar_id{
+        background-color: var(--cinzaclaro);
+        padding: 0.5em;
+    }
+    #enviar_id:hover{
+        background-color: black;
+        color: white;
+        transition: 0.2s;
     }
  }
 
  @media screen and (min-width: 992px) and (max-width: 1900px)/*tv resolução*/
 {
     section#login {
+        position: absolute;
         text-align: center;
-        min-width: 50vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 850px;
+        height: 700px;        
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgb(200, 187, 187);
+
+        background: transparent;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.574);
+        backdrop-filter: blur(10px);
     }   
     section#login > div#imagem {
         background: #666564 url(../imagens/LoginPC.jpg) no-repeat;
@@ -74,11 +100,27 @@ device breakpoits 2023
         background-size: cover;
         background-position: 25% 25%;
     }
-
-    #important, #important2, #lembre {
+    section#login > div#formulario{
+        display: block;
+        text-align: center;
+        justify-content: center;        
+        margin-top: 5vh;
+    }
+    .material-symbols-outlined {
         position: relative;
-        left: 10px;
-     }
+        background-color: var(--cinza);
+        color: var(--preto);
+        height: 39px;    
+        padding: 10px;
+        box-shadow: 0px 0px 3px rgb(3, 1, 1);
+    }
+    
+    #iuser, #ipass  {
+        width: 550px;
+        height: 40px;
+        text-align: center;
+        padding: 7px;
+    }
     #enviar_id {  
         left: 10px;
         position: relative;

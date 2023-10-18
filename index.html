@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+   
     <title>Tela de Login</title>
 </head>
 <body>
@@ -16,26 +18,41 @@
     </div>
 
     <div id="formulario">   
-    <h1>login</h1>
-    <p>Seja bem vindo novamente.</p>
+    <h1 class="textos">Login</h1>
+    <p class="textos">Seja bem-vindo novamente.</p>
 
     <!-- tela para login -->
     <form action="login.php" method="post">
-       <span id="iconUser" class="material-symbols-outlined" >person</span>
-       <input type="text" name="Username" id="iuser" placeholder="Seu User">
-       <label for="Username"></label> <br>
-       <span id="iconPass" class="material-symbols-outlined">lock</span>
-       <input type="password" name="password" id="ipass" placeholder="Sua Senha">
-       <label for="password"></label><br><br>
-       <input type="radio" name="lembre" id="lembre">
-       <label for="lembre" id="important">Lembre De Mim</label>
-       <a href="#" id="important2"><p>Redefinir senha</p></a><br>
-       <input id="enviar_id" type="submit" value="Enviar"> <br><br>
 
-      <p>Não Possui Conta? <a href="#" id="redef_senha">Registre-se</a></p>
+      <div id="boxuser">
+      <!-- username e icon -->
+       <span id="iconUser" class="material-symbols-outlined">person</span>
+       <input type="text" name="Username" id="iuser" placeholder="Username">
+       <label for="Username"></label> <br>
+      <!--</div>
+
+      <div id="boxpass">-->
+      <!-- password e icon -->
+       <span id="iconPass" class="material-symbols-outlined">key</span>
+       <input type="password" name="password" id="ipass" placeholder="Password">
+       <label for="password"></label><br><br>
+     </div>
+      <!-- lembre de mim -->
+         <input type="checkbox" name="lembre" id="lembre">
+         <label for="lembre" class="textos">Lembre De Mim</label>
+
+      <!-- redefinir senha -->
+       <a href="#"><p>Redefinir senha</p></a><br>
+       <input id="enviar_id" type="submit" value="Logar"> <br><br>
+
+      <!-- registre-se -->
+      <p class="textos">Não Possui Conta? <a href="#">Registre-se</a></p>
+      
+ </div>
     </form>
     </div>
     </section>
+   
    </main>
 
 </body>
