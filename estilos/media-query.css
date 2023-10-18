@@ -26,8 +26,8 @@ device breakpoits 2023
     section#login {
         min-width: 80vw;   
         max-height: 90vh;    
-        background: transparent;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.574);
+        background-color: rgba(240, 248, 255, 0.215);
+        box-shadow: 0px 0px 10px rgba(218, 155, 203, 0.574);
         backdrop-filter: blur(10px);
     }
     section#login > div#imagem
@@ -88,10 +88,8 @@ device breakpoits 2023
         height: 700px;        
         border-radius: 20px;
         overflow: hidden;
-        box-shadow: 0px 0px 10px rgb(200, 187, 187);
-
-        background: transparent;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.574);
+        background-color: rgba(240, 248, 255, 0.215);
+        box-shadow: 0px 0px 10px rgba(218, 155, 203, 0.574);
         backdrop-filter: blur(10px);
     }   
     section#login > div#imagem {
@@ -99,12 +97,14 @@ device breakpoits 2023
         height: 200px;
         background-size: cover;
         background-position: 25% 25%;
+        box-shadow: 0px 0px 10px rgb(15, 14, 14);
     }
     section#login > div#formulario{
         display: block;
         text-align: center;
         justify-content: center;        
         margin-top: 5vh;
+        
     }
     .material-symbols-outlined {
         position: relative;
