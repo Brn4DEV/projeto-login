@@ -126,7 +126,6 @@ device breakpoits 2023
         text-align: center;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         width: 800px;
         height: 650px;        
         border-radius: 20px;
@@ -134,6 +133,7 @@ device breakpoits 2023
         background-color: rgba(240, 248, 255, 0.215);
         box-shadow: 0px 0px 10px rgba(218, 155, 203, 0.574);
         backdrop-filter: blur(10px);
+        transform: translate(-50%, -50%);
     }   
     section#login > div#imagem {
         background: #666564 url(../imagens/LoginPC.jpg) no-repeat;
