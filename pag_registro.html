@@ -20,15 +20,20 @@
         <h1 class="texto_cadastro">Cadastre-se</h1>
     
         <!-- tela para login -->
-        <form action="registrouser.php" method="post">
+        <form action="registrouser.php" method="post"  autocomplete="on">
     
           <div id="boxcadastro">
  
           <!-- nome completo -->          
           <span id="iconUser2" class="material-symbols-outlined">assignment_ind</span>
-          <input type="text" name="name" id="inamereal" placeholder="Nome Completo">
+          <input type="text" name="name" id="inamereal" placeholder="Username">
           <label for="name"></label> <br>
-          
+
+          <!-- senha -->          
+          <span id="iconpassw2" class="material-symbols-outlined">key</span>
+          <input type="password" name="password" id="ipassword2">
+          <label for="password"></label> <br>
+
            <!-- data de nascimento -->  
            <span id="iconCalendario" class="material-symbols-outlined">calendar_month</span>
            <input type="date" name="nascimento" id="inascimento"><br>
@@ -45,11 +50,11 @@
 
             <!-- email de contato -->  
             <span id="iconEmail2" class="material-symbols-outlined">mail</span>
-            <input type="email" name="email" id="iemail2" placeholder="SeuEmail@digiteaqui.com"><br>
+            <input type="email" name="email" id="iemail2" placeholder="SeuEmail@digiteaqui.com" autocomplete="email"><br>
 
              <!-- telefone -->
              <span id="icontel" class="material-symbols-outlined">phone</span>
-             <input type="tel" name="telefone" id="itelefone" placeholder="(000)12345-6789" minlength="11" maxlength="11" pattern="^\(\d{2}\)\d{4,5}-\D{4}$"> <br>
+             <input type="tel" name="telefone" id="itelefone" placeholder="(000)12345-6789" minlength="11" maxlength="11" pattern="^\(\d{2}\)\d{4,5}-\D{4}$" autocomplete="tel"> <br>
              
              <p class="textos_senha">Ja Possui Conta? <a href="index.html">Login</a></p>
              <input id="enviar_cadastroenviar" type="submit" value="Enviar">

@@ -45,7 +45,7 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);    
     width: 350px;
-    height: 550px;
+    height: 580px;
     border-radius: 20px;
     overflow: hidden;
     background-color: rgba(240, 248, 255, 0.215);
@@ -153,7 +153,7 @@ section#login > div#imagemCadastro {
 
     left: -1px;
 }
-#inamereal, #inamereal, #inascimento, #iemail2, #itelefone
+#inamereal, #ipassword2, #inascimento, #iemail2, #itelefone
 {
     width: 250px;
     height: 30px;
