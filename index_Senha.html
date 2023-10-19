@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+    <title>Redefinir Senha</title>
+</head>
+<body>
+    <main>
+        <section id="redefinirSenha">
+        
+        <div id="formulario_Redefsenha">   
+        <h1 class="textos_senha">Redefinir Sua Senha</h1>
+    
+        <!-- tela para login -->
+        <form action="redefinir_senha.php" method="post">
+    
+          <div id="boxuser_Senha">
+          <!-- username e icon -->
+           <span id="iconUser" class="material-symbols-outlined">person</span>
+           <input type="text" name="username" id="iuser_redef" placeholder="Username">
+           <label for="username"></label> <br>
+          <!--</div>
+    
+          <div id="boxpass">-->
+          <!-- password e icon -->
+           <span id="iconPass" class="material-symbols-outlined">email</span>
+           <input type="email" name="email" id="iemail" placeholder="Seu e-mail">
+           <label for="email"></label><br><br>
+         </div>                
+          <!-- registre-se -->
+          <input id="enviar_redefinirsenha" type="submit" value="Enviar"> <br><br>
+          <p class="textos_senha">Ja Possui Conta? <a href="index.html">Login</a></p>
+          
+     </div>
+        </form>
+        </div>
+        </section>
+       
+       </main>
+</body>
+</html>

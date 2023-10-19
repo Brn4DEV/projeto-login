@@ -25,7 +25,7 @@ device breakpoits 2023
 
     section#login {
         min-width: 80vw;   
-        max-height: 90vh;    
+        max-height: 60vh;    
         background-color: rgba(240, 248, 255, 0.215);
         box-shadow: 0px 0px 10px rgba(218, 155, 203, 0.574);
         backdrop-filter: blur(10px);
@@ -61,19 +61,75 @@ device breakpoits 2023
         height: 30px;
         text-align: center;
         padding: 7px;
+        
+        color: var(--branco);
     }
     #boxuser, #boxpass {
         padding: 5px;
     }
     #enviar_id{
-        background-color: var(--cinzaclaro);
+        background-color: var(--branco);
         padding: 0.5em;
+        width: 285px;
+        height: 30px;
     }
     #enviar_id:hover{
-        background-color: black;
-        color: white;
+        background-color: var(--cinza);
+        color: var(--branco);
         transition: 0.2s;
     }
+
+    /*cadastro*/
+    section#login > div#imagemCadastro
+    {
+       float: left;
+       width: 30%;
+       height: 100%;       
+       background: #666564 url(../imagens//cadastro.jpg) no-repeat;      
+
+       background-size: cover;
+       background-position: 65%;
+    }
+    .texto_cadastro {
+        position: relative;
+    }
+    #enviar_cadastroenviar {
+        position: relative;
+        left: 3px;
+        width: 285px;
+        height: 30px;
+    }
+    #enviar_cadastroenviar:hover {
+        color: var(--branco);
+         background-color: var(--cinza);
+     }
+    .material-symbols-outlined {
+        position: relative;
+        background-color: var(--cinza);
+        color: var(--preto);
+        height: 30px;    
+        padding: 7px;
+        box-shadow: 0px 0px 3px rgb(3, 1, 1);
+        left: 7px;
+        top: 10px;
+    }
+    #inamereal, #inascimento, #iemail2, #itelefone
+    {
+        width: 250px;
+        height: 30px;
+        text-align: center;
+        padding: 15px;
+        background-color: var(--cinza);
+    }
+    input::placeholder {
+        color: #ffffff;
+        opacity: 1;
+      }
+/*
+<!-- iconUser  iconCalendario iconSexo  iconEmail2 icontel
+
+inamereal inascimento isexoo iemail2 itelefone
+-->*/
  }
 
  @media screen and (min-width: 992px) and (max-width: 1900px)/*tv resolução*/
@@ -84,8 +140,8 @@ device breakpoits 2023
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 850px;
-        height: 700px;        
+        width: 800px;
+        height: 600px;        
         border-radius: 20px;
         overflow: hidden;
         background-color: rgba(240, 248, 255, 0.215);
@@ -119,10 +175,21 @@ device breakpoits 2023
         width: 550px;
         height: 40px;
         text-align: center;
-        padding: 7px;
+        padding: 7px;        
+        color: var(--branco);
     }
     #enviar_id {  
         left: 10px;
         position: relative;
+        width: 250px;
+        height: 30px;
     }
+    #enviar_id:hover {
+        color: var(--branco);
+         background-color: var(--cinza);
+     }
+     input::placeholder {
+        color: #ffffff;
+        opacity: 1;
+      }
 }
