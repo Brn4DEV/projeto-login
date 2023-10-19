@@ -47,21 +47,23 @@ device breakpoits 2023
     }
     .material-symbols-outlined {
         position: relative;
-        background-color: var(--cinza);
-        color: var(--preto);
-        height: 30px;    
-        padding: 7px;
-        box-shadow: 0px 0px 3px rgb(3, 1, 1);
-        left: 7px;
-        top: 10px;
+      /*  background-color: var(--cinza);*/
+        color: var(--branco);
+        padding: 3px;
+        top: 8px;
+    }
+    form > div.campo {
+        position: relative; 
     }
     
-    #iuser, #ipass  {
+    #iuser, #ipass, #iemail {
+        position: relative;
         width: 250px;
         height: 30px;
         text-align: center;
         padding: 7px;
-        
+        left: 5px;
+        background-color: var(--cinza);    
         color: var(--branco);
     }
     #boxuser, #boxpass {
@@ -70,7 +72,7 @@ device breakpoits 2023
     #enviar_id{
         background-color: var(--branco);
         padding: 0.5em;
-        width: 285px;
+        width: 250px;
         height: 30px;
     }
     #enviar_id:hover{
@@ -103,16 +105,6 @@ device breakpoits 2023
         color: var(--branco);
          background-color: var(--cinza);
      }
-    .material-symbols-outlined {
-        position: relative;
-        background-color: var(--cinza);
-        color: var(--preto);
-        height: 30px;    
-        padding: 7px;
-        box-shadow: 0px 0px 3px rgb(3, 1, 1);
-        left: 7px;
-        top: 10px;
-    }
     #inamereal, #inascimento, #iemail2, #itelefone, #ipassword2
     {
         width: 250px;
@@ -125,11 +117,6 @@ device breakpoits 2023
         color: #ffffff;
         opacity: 1;
       }
-/*
-<!-- iconUser  iconCalendario iconSexo  iconEmail2 icontel
-
-inamereal inascimento isexoo iemail2 itelefone
--->*/
  }
 
  @media screen and (min-width: 992px) and (max-width: 1900px)/*tv resolução*/
@@ -164,24 +151,30 @@ inamereal inascimento isexoo iemail2 itelefone
     }
     .material-symbols-outlined {
         position: relative;
-        background-color: var(--cinza);
-        color: var(--preto);
-        height: 39px;    
-        padding: 10px;
-        box-shadow: 0px 0px 3px rgb(3, 1, 1);
+      /*  background-color: var(--cinza);*/
+        color: var(--branco);
+        padding: 3px;
+        top: 8px;
+    }
+    form > div.campo {
+        position: relative; 
     }
     
-    #iuser, #ipass  {
-        width: 550px;
-        height: 40px;
-        text-align: center;
-        padding: 7px;        
-        color: var(--branco);
-    }
-    #enviar_id {  
-        left: 10px;
+    #iuser, #ipass, #iemail {
         position: relative;
         width: 250px;
+        height: 30px;
+        text-align: center;
+        padding: 7px;
+        left: 5px;
+        background-color: var(--cinza);    
+        color: var(--branco);
+    }
+  
+    #enviar_id {  
+        left: 22px;
+        position: relative;
+        width: 240px;
         height: 30px;
     }
     #enviar_id:hover {

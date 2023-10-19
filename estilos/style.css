@@ -52,6 +52,48 @@ section#login {
     box-shadow: 0px 0px 10px rgba(218, 155, 203, 0.574);
     backdrop-filter: blur(10px);
 }
+
+section#login > div#imagem {
+    display: block;
+    background:  var(--cinza) url(../imagens/login.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: left bottom;
+}
+section#login > div#formulario {
+    display: block;
+    padding: 10px;   
+}
+
+.material-symbols-outlined {
+    position: relative;
+  /*  background-color: var(--cinza);*/
+    color: var(--branco);
+    padding: 3px;
+    top: 8px;
+}
+
+form > div.campo {
+
+    position: relative; 
+}
+
+#iuser, #ipass, #iemail {
+    position: relative;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    padding: 7px;
+    left: 5px;
+    background-color: var(--cinza);    
+    color: var(--branco);
+}
+
+
+/*Redefinir senha Pagina*/
+/*Redefinir senha Pagina*/
+/*Redefinir senha Pagina*/
+
 section#redefinirSenha {
     position: absolute;
     text-align: center;
@@ -66,42 +108,24 @@ section#redefinirSenha {
     box-shadow: 0px 0px 10px rgba(218, 155, 203, 0.574);
     backdrop-filter: blur(15px);
 }
-section#login > div#imagem {
-    display: block;
-    background:  var(--cinza) url(../imagens/login.jpg) no-repeat;
-    height: 200px;
-    background-size: cover;
-    background-position: left bottom;
-}
-section#login > div#formulario {
-    display: block;
-    padding: 10px;   
-}
+
 section#login > div#formulario_Redefsenha {
     display: block;
     padding: 10px;   
 }
-.material-symbols-outlined {
+
+.textos_senha {
     position: relative;
-    background-color: var(--cinza);
-    color: var(--preto);
-    height: 30px;    
-    padding: 7px;
-    box-shadow: 0px 0px 3px rgb(3, 1, 1);
-    left: 7px;
-    top: 10px;
+    top: 50px;
 }
 
-#iuser, #ipass, #iemail {
-    width: 250px;
-    height: 30px;
-    text-align: center;
-    padding: 7px;
-    background-color: var(--cinza);    
-    color: var(--branco);
+#boxuser_Senha {
+    position: relative;
+    top: 60px;    
+    
 }
 
-#iuser_redef, #iemail {
+#iuser_redef, #redef_iemail {
     width: 250px;
     height: 30px;
     text-align: center;
@@ -110,27 +134,25 @@ section#login > div#formulario_Redefsenha {
     color: var(--branco);
 }
 
-.textos_senha {
-    position: relative;
-    top: 50px;
-}
 #enviar_redefinirsenha {
     position: relative;
     top: 50px;
-    left: 3px;
-    width: 285px;
+    left: 18px;
+    width: 250px;
     height: 30px;
 }
 #enviar_redefinirsenha:hover {
    color: var(--branco);
     background-color: var(--cinza);
 }
-#boxuser_Senha {
-    position: relative;
-    top: 60px;
-    
-}
 
+/*Redefinir senha Pagina*/
+/*Redefinir senha Pagina*/
+/*Redefinir senha Pagina*/
+
+
+/*cadastro*/
+/*cadastro*/
 /*cadastro*/
 section#login > div#imagemCadastro {
     display: block;
@@ -162,8 +184,21 @@ section#login > div#imagemCadastro {
     background-color: var(--cinza);
     color: var(--branco);
 }
-
+#enviar_id {  
+    left: 22px;
+    position: relative;
+    width: 240px;
+    height: 30px;
+}
+#enviar_id:hover {
+    color: var(--branco);
+     background-color: var(--cinza);
+ }
 input::placeholder {
     color: #ffffff;
     opacity: 1;
   }
+
+  /*cadastro*/
+/*cadastro*/
+/*cadastro*/
